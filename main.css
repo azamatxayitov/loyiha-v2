@@ -45,6 +45,8 @@ body {
 
 .blur-line {
     display: inline-block;
+    position: relative;
+    top: -2px;
     margin-left: 5px;
     width: 80px;
     height: 4px;
@@ -54,6 +56,16 @@ body {
 }
 
 /* Main Header Styles*/
+.main-header {
+    position: fixed; 
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 3px 16px 0px rgba(0 0 0 / 10%);
+    z-index: 10;  
+}
+
 .main-navigation__brand {
     display: inline-block;
     vertical-align: middle;
@@ -284,4 +296,101 @@ body {
 
 .client-item__rate .disabled {
     color: gray;
+}
+
+/* Portfolio section*/
+.portfolio {
+    padding: 100px 0; 
+}
+
+.portfolio-filters {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 50px;
+}
+
+.portfolio-filters li {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.portfolio-filters li:hover,
+.portfolio-filters li.active {
+    color: #1345e6;
+}
+
+.portfolio-items {
+    position: relative;
+    margin-top: 50px;
+}
+
+.portfolio-item {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 50%; 
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.portfolio-item-1 {
+    padding-left: 0;
+}
+
+.portfolio-item-2 {
+    position: absolute;
+    top: 0;
+    right: 0; 
+}
+
+.portfolio-item-3 {
+    position: absolute;
+    top: 380px;
+    width: 50%;
+    right: 0; 
+}
+
+.portfolio-item__image {
+    width: 100%;
+}
+
+.portfolio-item__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(19,69,230,0.9);
+    visibility: hidden;
+    z-index: 1;
+}
+
+.portfolio-item__info {
+    position: absolute;
+    bottom: 44px;
+    left: 80px;
+    color: #ffffff;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.portfolio-item__info a {
+    color: #ffffff;
+    text-decoration: none; 
+}
+
+.portfolio-item:hover .portfolio-item__overlay {
+    visibility: visible;
+    top: 20px;
+    left: 20px; 
+}
+
+.portfolio-item:hover .portfolio-item__info {
+    visibility: visible;
+    bottom: 24px;
+    left: 60px;
 }
