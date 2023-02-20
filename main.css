@@ -362,7 +362,7 @@ body {
 
 .portfolio-item-3 {
     position: absolute;
-    top: 380px;
+    top: 330px;
     width: 50%;
     right: 0; 
 }
@@ -407,3 +407,86 @@ body {
     bottom: 24px;
     left: 60px;
 }
+
+/* Blog Section*/
+.blog {
+    padding: 100px; 
+}
+
+.blog-items {
+    margin-top: 50px;
+}
+
+.blog-item {
+    display: inline-block;
+    width: 30%;
+    margin-right: 3%;
+    box-sizing: border-box; 
+}
+
+.blog-item:hover {
+    box-shadow: 0px 10px 20px rgba(5 55 77 / 10%);
+}
+
+.blog-item:hover .blog-item__info {
+    background-color: white;
+}
+
+.blog-item__image img {
+    width: 100%;
+}
+
+.blog-item__info {
+    background-color: #f8faff;
+    padding: 30px;
+    color: #797979;
+}
+
+.blog-item__main-info span {
+    font-size: 14px;
+    margin-right: 30px;
+    font-weight: lighter;
+}
+
+.blog-item__info i {
+    margin-right: 5px;
+}
+
+.blog-item__title {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 13px;
+    color: #05364d;
+    font-weight: 700; 
+}
+
+.blog-item__description {
+    line-height: 27px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.blog-item__learn-more {
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #05364d;
+    cursor: pointer;  
+}
+
+.blog-item__learn-more:hover {
+    color: #ed239f;  
+}
+
+/* Partners Section*/
+.partners {
+    padding-top: 100px;
+}
+
+.partner {
+    display: inline-block;
+    padding: 0 30px;
+}
+
+
